@@ -24,7 +24,7 @@ Note that we use torch.cuda.amp to accelerate speed of training which requires p
 ### Prepare Datasets
 
 ```bash
-mkdir data
+mkdir datasets
 ```
 
 Download the person dataset [Occluded-Duke](https://github.com/lightas/Occluded-DukeMTMC-Dataset), and [Occluded-REID]
@@ -33,7 +33,10 @@ Then unzip them and rename them under the directory like
 ```
 data
 ├── Occluded_Duke
-│   └── images ..
+│   ├── bounding_box_train
+│   ├── bounding_box_test
+│   └── query
+
 
 ```
 
@@ -53,8 +56,8 @@ sh dist_train_occDuke.sh
 sh dist_test_occDuke.sh
 ```
 
+For evaluation only, you could download our trained model from [Google](https://drive.google.com/file/d/1u-U6H7p3DLamGnSHajWAr8HP_WuzXyNY/view?usp=drive_link)
 
-Note: We reorganize code and the performances are slightly different from the paper's.
 
 ## Acknowledgement
 

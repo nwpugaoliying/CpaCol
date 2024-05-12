@@ -2,7 +2,7 @@
 ![PyTorch >=1.0](https://img.shields.io/badge/PyTorch->=1.6-blue.svg)
 
 
-The *official* repository for [Contrastive Pedestrian Attentive and Correlation Learning Network for Occluded Person Re-Identification] achieves state-of-the-art performances on occluded person re-ID datasets.
+The *official* repository for [Contrastive Pedestrian Attentive and Correlation Learning Network for Occluded Person Re-Identification](https://ieeexplore.ieee.org/abstract/document/10476489/) (published in IEEE TCSVT 2024) achieves state-of-the-art performances on occluded person re-ID datasets.
 
 
 ## Pipeline
@@ -27,7 +27,7 @@ Note that we use torch.cuda.amp to accelerate speed of training which requires p
 mkdir datasets
 ```
 
-Download the person dataset [Occluded-Duke](https://github.com/lightas/Occluded-DukeMTMC-Dataset), and [Occluded-REID]
+Download the person dataset [Occluded-Duke](https://github.com/lightas/Occluded-DukeMTMC-Dataset), and Occluded-REID
 Then unzip them and rename them under the directory like
 
 ```
@@ -56,8 +56,8 @@ sh dist_train_occDuke.sh
 sh dist_test_occDuke.sh
 ```
 
-For evaluation only, you could download our trained model from [Google](https://drive.google.com/file/d/1u-U6H7p3DLamGnSHajWAr8HP_WuzXyNY/view?usp=drive_link)
-
+For evaluation only, you could download our trained model from [Google](https://drive.google.com/file/d/1u-U6H7p3DLamGnSHajWAr8HP_WuzXyNY/view?usp=sharing)
+The pretrained model and other files can also be downloaded from [Google](https://drive.google.com/drive/folders/16XO1d7Ce52SP4FI_3UkRyEyXOKmW4k3U?usp=sharing)
 
 ## Acknowledgement
 
